@@ -35,7 +35,7 @@ Flujo
 
 El tiempo desde que la recepcionista me atiende, toma mis datos, contacta y confirma con la persona solicitada 5 minutos.
 
-![](clienteIncognito.jpg)
+![registro](img/clienteIncognito.jpg)
 
 ## Análisis
 
