@@ -1,4 +1,47 @@
 # Proyecto Final Common Core
+
+## CHECK
+
+El registro de visitantes en las empresas Latinoamericanas es un proceso en general tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Como vivimos en la era digital planteamos nuestra solución creando una interfaz que permite al visitante realizar su ingreso en recepción por medio de una tablet, donde se solicitaran datos básicos de identificación y una fotografía.
+
+## Introducción
+
+Los integrantes del Equipo son:
+   * Diseñadora UX
+      VALERIA DROGUETT
+      Diseñar la experiencia de la aplicación (flujo, interacción, etc.).
+      Identificar, documentar y priorizar las historias de usuario.
+      Crear el diseño visual de la interfaz.
+   * Desarrolladoras Front-end
+      NOELIA SABANDO
+      MARÍA LORETO HENRÍQUEZ
+      Implementar la interfaz de usuario diseñada (HTML/CSS/JS).
+
+## Entrevistas
+
+## Análisis
+
+## Prototipo de Baja Fidelidad
+
+![Splash](IMG_8257.jpg)
+
+![Registro](IMG_8259.jpg)
+
+![Foto](IMG_8260.jpg)
+
+![Envío Notificación](IMG_8262.jpg)
+
+## Prototipo de Alta Fidelidad
+
+## Organización
+
+La Organización del Equipo puede revisarla en este link.
+(https://trello.com/b/GefglG1c/registro-usuario)
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+# Proyecto Final Common Core
 ## Preámbulo
 El registro de visitantes en una empresa en América Latina es un proceso tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Si vivimos en la era digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de pedir una identificación, tomamos una foto? 
 
