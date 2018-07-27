@@ -19,6 +19,24 @@ Los integrantes del Equipo son:
 
 ## Entrevistas
 
+## Cliente Incógnito
+
+Investigación Cliente incógnito
+Flujo
+  * Al acceder a al edificio me dirijo al módulo de Recepción
+  * Luego de saludar, la recepcionista me pregunta a quien busco
+  * Le indico el nombre y me pide los siguientes datos mientras registra fecha y hora de visita
+    * Nombre Completo
+    * Empresa a la cuál pertenezco
+    * Nombre de la persona a quien visito
+    * Motivo
+  * Luego mi firma al final de la línea de registro
+  * Posterior a esto, toma su teléfono y vía What´s APP contacta a la persona para avisar mi llegada, quien le confirma en unos minutos y me pide que tome asiento mientras espero.
+
+El tiempo desde que la recepcionista me atiende, toma mis datos, contacta y confirma con la persona solicitada 5 minutos.
+
+![](clienteIncognito.jpg)
+
 ## Análisis
 
 ## Prototipo de Baja Fidelidad
