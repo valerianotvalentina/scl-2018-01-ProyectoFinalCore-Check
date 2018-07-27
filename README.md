@@ -41,13 +41,7 @@ El tiempo desde que la recepcionista me atiende, toma mis datos, contacta y conf
 
 ## Prototipo de Baja Fidelidad
 
-![Splash](img/bajaFidelidad1.jpg)
-
-![Registro](img/bajaFidelidad2.jpg)
-
-![Foto](img/bajaFidelidad3.jpg)
-
-![Envío Notificación](img/bajaFidelidad4.jpg)
+![Prototipo iteración 1](img/bajaFidelidad.jpg)
 
 ## Prototipo de Alta Fidelidad
 
