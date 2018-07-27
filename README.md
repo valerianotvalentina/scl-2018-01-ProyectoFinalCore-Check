@@ -23,13 +23,13 @@ Los integrantes del Equipo son:
 
 ## Prototipo de Baja Fidelidad
 
-![Splash](img/IMG_8257.jpg)
+![Splash](bajaFidelidad1.jpg)
 
-![Registro](img/IMG_8259.jpg)
+![Registro](bajaFidelidad2.jpg)
 
-![Foto](img/IMG_8260.jpg)
+![Foto](bajaFidelidad3.jpg)
 
-![Envío Notificación](img/IMG_8262.jpg)
+![Envío Notificación](bajaFidelidad4.jpg)
 
 ## Prototipo de Alta Fidelidad
 
