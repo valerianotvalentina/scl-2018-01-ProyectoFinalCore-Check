@@ -29,7 +29,7 @@ body {
 }
 
 form {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .form-group {
@@ -41,8 +41,12 @@ form {
     color: #706f6f;
 }
 
+.visitaMotivo {
+    margin-top: 45px;
+}
+
 .checkboxMotivo {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .boton-next {
