@@ -32,6 +32,10 @@ form {
     margin-top: 50px;
 }
 
+.form-group {
+    margin-bottom: 0px;
+}
+
 .custom-control-label {
     font-size: 15px;
     color: #706f6f;

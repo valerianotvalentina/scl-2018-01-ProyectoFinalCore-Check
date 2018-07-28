@@ -1,6 +1,15 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #343d58;
+}
+
+.imagenFondo {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    animation-name: example;
+    animation-duration: 5s;
 }
 
 .logo {
@@ -14,4 +23,22 @@ p {
     font-weight: 400;
     text-align: center;
     margin-top: 20px;
+}
+
+@-webkit-keyframes example {
+    from {
+        background-color: #343d58;
+    }
+    to {
+        background-color: #6175E8;
+    }
+}
+
+@keyframes example {
+    from {
+        background-color: #343d58;
+    }
+    to {
+        background-color: #6175E8;
+    }
 }
