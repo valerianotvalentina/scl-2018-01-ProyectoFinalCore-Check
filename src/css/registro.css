@@ -41,6 +41,10 @@ form {
     color: #706f6f;
 }
 
+.checkboxMotivo {
+    margin-top: 15px;
+}
+
 .boton-next {
     height: 100%;
     color: #ffffff;
