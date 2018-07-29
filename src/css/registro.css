@@ -1,9 +1,108 @@
-.textoIngreso {
-  border-top :0px !important;
-  border-left :0px !important;
-  border-right :0px !important; 
-}
-.navbar-text{
-  text-align: center;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
+.textoIngreso {
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    font-size: 15px;
+    color: #575756;
+    margin-bottom: 5px;
+}
+
+.custom-control-label:before {
+    background-color: #ededed;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #8EC5FC;
+}
+
+.placeholder {
+    font-size: 15px;
+    color: #706f6f;
+}
+
+.asterisco {
+    color: #8EC5FC;
+}
+
+.navbar-text {
+    margin-left: 20px;
+}
+
+.fa-arrow-right {
+    font-size: 50px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.custom-control-label {
+    font-size: 15px;
+    color: #706f6f;
+}
+
+.visitaMotivo {
+    margin-top: 45px;
+}
+
+.checkboxMotivo {
+    margin-top: 10px;
+}
+
+.boton-next {
+    height: 100%;
+    color: #ffffff;
+    background-color: #8EC5FC;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.boton-next:hover,
+.boton-next:focus,
+.boton-next:active,
+.boton-next.active,
+.open .dropdown-toggle.boton-next {
+    color: #ffffff;
+    background-color: #E0C3FC;
+    border: 0px solid #E0C3FC;
+    border-radius: 5px;
+}
+
+.boton-next:active,
+.boton-next.active,
+.open .dropdown-toggle.boton-next {
+    background-image: none;
+}
+
+.boton-next.disabled,
+.boton-next[disabled],
+fieldset[disabled] .boton-next,
+.boton-next.disabled:hover,
+.boton-next[disabled]:hover,
+fieldset[disabled] .boton-next:hover,
+.boton-next.disabled:focus,
+.boton-next[disabled]:focus,
+fieldset[disabled] .boton-next:focus,
+.boton-next.disabled:active,
+.boton-next[disabled]:active,
+fieldset[disabled] .boton-next:active,
+.boton-next.disabled.active,
+.boton-next[disabled].active,
+fieldset[disabled] .boton-next.active {
+    background-color: #8EC5FC;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.boton-next .badge {
+    color: #8EC5FC;
+    background-color: #ffffff;
+}
