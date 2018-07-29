@@ -60,7 +60,7 @@ form {
 .boton-next {
     height: 100%;
     color: #ffffff;
-    background-color: #8EC5FC;
+    background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
     border: 0px solid #8EC5FC;
     border-radius: 5px;
 }
@@ -71,7 +71,7 @@ form {
 .boton-next.active,
 .open .dropdown-toggle.boton-next {
     color: #ffffff;
-    background-color: #E0C3FC;
+    background-image: linear-gradient(to right, #8ec5fc 0%, #e0c3fc 100%);
     border: 0px solid #E0C3FC;
     border-radius: 5px;
 }
@@ -105,4 +105,8 @@ fieldset[disabled] .boton-next.active {
 .boton-next .badge {
     color: #8EC5FC;
     background-color: #ffffff;
+}
+
+footer {
+    height: 80px;
 }
