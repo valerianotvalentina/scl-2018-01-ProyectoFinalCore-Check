@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +15,13 @@
     <span class="navbar-text">
           Ingrese sus datos de registro
         </span>
-    <button type="button" class="btn boton-next"><i class="fas fa-arrow-right"></i></button>
+    <button type="button" class="btn boton-next"><i class="fas fa-arrow-right" onclick="saveUser()"></i></button>
 </nav>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-
             </div>
             <div class="col-8">
                 <form>
@@ -60,27 +58,26 @@
                         </span>
                         <div class="checkboxMotivo">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Reunión</label>
+                                <input type="checkbox" class="custom-control-input" id="meetingCheck">
+                                <label class="custom-control-label" for="meetingCheck">Reunión</label>
                             </div>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                <label class="custom-control-label" for="customCheck2">Entrevista</label>
+                                <input type="checkbox" class="custom-control-input" id="interviewCheck">
+                                <label class="custom-control-label" for="interviewCheck">Entrevista</label>
                             </div>
                             <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                <label class="custom-control-label" for="customCheck3">Motivos personales</label>
+                                <input type="checkbox" class="custom-control-input" id="personalCheck">
+                                <label class="custom-control-label" for="personalCheck">Motivos personales</label>
                             </div>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                <label class="custom-control-label" for="customCheck4">Otros</label>
+                                <input type="checkbox" class="custom-control-input" id="otherCheck">
+                                <label class="custom-control-label" for="otherCheck">Otros</label>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col">
-
             </div>
         </div>
     </div>
@@ -102,5 +99,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="../js/registro.js"></script>
 </body>
-
 </html>
