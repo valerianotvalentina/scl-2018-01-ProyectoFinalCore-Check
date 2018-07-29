@@ -12,7 +12,7 @@
         <span class="navbar-text">
           Ingrese sus datos de Registro
         </span>
-        <button type="button" class="btn btn-lg btn-primary" disabled>></button>
+        <button type="button" class="btn btn-lg btn-primary" disabled onclick="saveUser"></button>
       </nav>
 <body>
     <div class="container">
@@ -39,20 +39,20 @@
                         <input type="text" class="form-control textoIngreso" id="collaboratorName" placeholder="¿A quien visita?">
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Reunión</label>
+                        <input type="checkbox" class="custom-control-input" id="meetingCheck">
+                        <label class="custom-control-label" for="meetingCheck">Reunión</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck1">Entrevista</label>
+                        <input type="checkbox" class="custom-control-input" id="interviewCheck">
+                        <label class="custom-control-label" for="interviewCheck">Entrevista</label>
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label" for="customCheck1">Motivos Personales</label>
+                        <input type="checkbox" class="custom-control-input" id="personalCheck">
+                        <label class="custom-control-label" for="personalCheck">Motivos Personales</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label" for="customCheck1">Otros</label>
+                        <input type="checkbox" class="custom-control-input" id="otherCheck">
+                        <label class="custom-control-label" for="otherCheck">Otros</label>
                     </div>
                 </form>
             </div>
@@ -61,10 +61,22 @@
             </div>             
         </div>
     </div>
-
-
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCJaWLBBmHvy3xeg5kkLdGw3ysBH7nG7jc",
+                authDomain: "conserjeapp-7633f.firebaseio.com",
+                databaseURL: "https://conserjeapp-7633f.firebaseio.com/",
+                projectId: "conserjeapp-7633f",
+                storageBucket: "gs://conserjeapp-7633f.appspot.com",
+                messagingSenderId: "288945821020"
+            };
+            firebase.initializeApp(config);
+        </script> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="../js/registro.js"></script>
 </body>
 </html>
