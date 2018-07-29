@@ -9,18 +9,31 @@
     <link rel="stylesheet" href="src/css/intro.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="icon" href="../scl-2018-01-ProyectoFinalCore-Check/img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Check - Registro de visitas</title>
 </head>
 
-<body onload="timeout()">
-    <header>
-    </header>
+<body>
     <section class="imagenFondo">
         <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div>
+                        <form action="../scl-2018-01-ProyectoFinalCore-Check/src/html/admin.html" method="get" id="admin">
+                        </form>
+                        <button class="btn boton-admin" type="submit" form="admin" value="Submit"><i class="fas fa-sign-in-alt"></i> <span>Admin</span></button>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-sm-12 col-md-12 text-center">
                     <img class="logo" src="../scl-2018-01-ProyectoFinalCore-Check/img/Logotipo.png">
                     <p>Registro de visitas</p>
+                    <div>
+                        <form action="../scl-2018-01-ProyectoFinalCore-Check/src/html/registro.html" method="get" id="comenzar">
+                        </form>
+                        <button class="botonComenzar" type="submit" form="comenzar" value="Submit">Comenzar</button>
+                    </div>
                 </div>
             </div>
         </div>
