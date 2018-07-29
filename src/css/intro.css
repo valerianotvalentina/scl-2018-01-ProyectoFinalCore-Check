@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 p {
@@ -60,4 +60,66 @@ p {
     to {
         background-color: #6175E8;
     }
+}
+
+.boton-admin {
+    height: 100%;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-left: auto;
+}
+
+.boton-admin:hover,
+.boton-admin:focus,
+.boton-admin:active,
+.boton-admin.active,
+.open .dropdown-toggle.boton-admin {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #8ec5fc 0%, #e0c3fc 100%);
+    border: 0px solid #E0C3FC;
+    border-radius: 5px;
+}
+
+.boton-admin:active,
+.boton-admin.active,
+.open .dropdown-toggle.boton-admin {
+    background-image: none;
+}
+
+.boton-admin.disabled,
+.boton-admin[disabled],
+fieldset[disabled] .boton-admin,
+.boton-admin.disabled:hover,
+.boton-admin[disabled]:hover,
+fieldset[disabled] .boton-admin:hover,
+.boton-admin.disabled:focus,
+.boton-admin[disabled]:focus,
+fieldset[disabled] .boton-admint:focus,
+.boton-admin.disabled:active,
+.boton-admin[disabled]:active,
+fieldset[disabled] .boton-admin:active,
+.boton-admin.disabled.active,
+.boton-admin[disabled].active,
+fieldset[disabled] .boton-admin.active {
+    background-color: #8EC5FC;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.boton-admin .badge {
+    color: #8EC5FC;
+    background-color: #ffffff;
+}
+
+.fa-sign-in-alt {
+    font-size: 30px;
+    margin-right: 5px;
 }
