@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #343d58;
 }
 
 .imagenFondo {
@@ -8,12 +9,14 @@ body {
     height: 100vh;
     -webkit-animation-name: example;
     -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 2;
     animation-name: example;
     animation-duration: 5s;
+    animation-iteration-count: 2;
 }
 
 .logo {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 p {
@@ -23,6 +26,22 @@ p {
     font-weight: 400;
     text-align: center;
     margin-top: 20px;
+}
+
+.botonComenzar {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%)
+}
+
+.botonComenzar:hover {
+    background-image: linear-gradient(to right, #8ec5fc 0%, #e0c3fc 100%)
 }
 
 @-webkit-keyframes example {
