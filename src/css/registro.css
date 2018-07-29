@@ -11,6 +11,14 @@ body {
     margin-bottom: 5px;
 }
 
+.custom-control-label:before {
+    background-color: #ededed;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #8EC5FC;
+}
+
 .placeholder {
     font-size: 15px;
     color: #706f6f;
