@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Check - Registro</title>
 </head>
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar sticky-top navbar-light bg-light">
     <span class="navbar-text">
           Ingrese sus datos de registro
         </span>
@@ -35,6 +35,12 @@
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
+                        <input type="text" class="form-control textoIngreso" id="rut"><span class="placeholder">
+                                Rut
+                            </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="eMail">
                         <span class="placeholder">
                             Correo electrónico <b class="asterisco"> *</b>
@@ -44,14 +50,21 @@
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="enterpriseFrom">
                         <span class="placeholder">
-                            Empresa
+                            Empresa donde trabajas
                         </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"></label>
+                        <input type="text" class="form-control textoIngreso" id="patente">
+                        <span class="placeholder">
+                                Patente vehículo
+                            </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="collaboratorName">
                         <span class="placeholder">
-                            ¿A quién visita? <b class="asterisco"> *</b>
+                            ¿A quién visitas? <b class="asterisco"> *</b>
                         </span>
                     </div>
                     <div class="visitaMotivo">
@@ -84,6 +97,9 @@
             </div>
         </div>
     </div>
+
+    <footer>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

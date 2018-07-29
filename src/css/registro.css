@@ -106,3 +106,7 @@ fieldset[disabled] .boton-next.active {
     color: #8EC5FC;
     background-color: #ffffff;
 }
+
+footer {
+    height: 80px;
+}
