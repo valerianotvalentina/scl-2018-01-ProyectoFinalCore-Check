@@ -4,6 +4,8 @@
 
 El registro de visitantes en las empresas Latinoamericanas es un proceso en general tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Como vivimos en la era digital planteamos nuestra solución creando una interfaz que permite al visitante realizar su ingreso en recepción por medio de una tablet, donde se solicitaran datos básicos de identificación y una fotografía.
 
+Puedes acceder al Proyecto desde el siguiente link  (https://mloretto.github.io/scl-2018-01-ProyectoFinalCore-Check/)
+
 ## Introducción
 
 Los integrantes del Equipo son:
