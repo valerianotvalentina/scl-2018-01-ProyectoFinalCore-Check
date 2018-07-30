@@ -184,3 +184,14 @@ fieldset[disabled] .btn-primary.active {
     color: #8EC5FC;
     background-color: #ffffff;
 }
+
+.navbar-text {
+    font-family: 'Days One', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.imprimir {
+    margin-bottom: 30px;
+}
