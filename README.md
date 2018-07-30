@@ -46,6 +46,8 @@ El tiempo desde que la recepcionista me atiende, toma mis datos, contacta y conf
 ![Prototipo iteración 1](img/bajaFidelidad.jpg)
 
 ## Prototipo de Alta Fidelidad
+El prototipo de Alta Fidelidad fue realizado en Fixma, puedes acceder ingresando al siguiente link.
+(https://www.figma.com/file/NpJHXb1JJ0is6XHz6vTERYij/Check-Registro-de-visitas?node-id=0%3A1)
 
 ## Organización
 
