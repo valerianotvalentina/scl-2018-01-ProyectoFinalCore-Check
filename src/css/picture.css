@@ -1,22 +1,28 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 .custom-control-label:before {
     background-color: #ededed;
 }
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #8EC5FC;
 }
+
 .navbar-text {
     margin-left: 20px;
 }
+
 .fa-arrow-right {
     font-size: 50px;
 }
+
 .custom-control-label {
     font-size: 15px;
     color: #706f6f;
 }
+
 .boton-next {
     height: 100%;
     color: #ffffff;
@@ -24,6 +30,7 @@ body {
     border: 0px solid #8EC5FC;
     border-radius: 5px;
 }
+
 .boton-next:hover,
 .boton-next:focus,
 .boton-next:active,
@@ -34,11 +41,13 @@ body {
     border: 0px solid #E0C3FC;
     border-radius: 5px;
 }
+
 .boton-next:active,
 .boton-next.active,
 .open .dropdown-toggle.boton-next {
     background-image: none;
 }
+
 .boton-next.disabled,
 .boton-next[disabled],
 fieldset[disabled] .boton-next,
@@ -58,17 +67,124 @@ fieldset[disabled] .boton-next.active {
     border: 0px solid #8EC5FC;
     border-radius: 5px;
 }
+
 .boton-next .badge {
     color: #8EC5FC;
     background-color: #ffffff;
 }
+
 footer {
     height: 80px;
 }
 
-.videoCap{
+.videoCap {
     width: 100%;
 }
-.imageCaptureBox{
+
+.imageCaptureBox {
     margin-top: 2.8em;
+}
+
+.fa-camera {
+    font-size: 50px;
+    color: #8EC5FC;
+}
+
+.btn-primary {
+    font-size: 15px;
+    background-color: #343D58;
+    border-color: #343D58;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-color: #343D58;
+    border-color: #343D58;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primaryt:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #343D58;
+    border-color: #343D58;
+}
+
+.btn-primary .badge {
+    background-color: #343D58;
+    border-color: #343D58;
+}
+
+.fa-arrow-left {
+    font-size: 50px;
+}
+
+.boton-left {
+    height: 100%;
+    color: #ffffff;
+    background-color: #ededed;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.boton-left:hover,
+.boton-left:focus,
+.boton-left:active,
+.boton-left.active,
+.open .dropdown-toggle.boton-left {
+    color: #ffffff;
+    background-color: #ededed;
+    border: 0px solid #E0C3FC;
+    border-radius: 5px;
+}
+
+.boton-left:active,
+.boton-left.active,
+.open .dropdown-toggle.boton-left {
+    background-image: none;
+}
+
+.boton-left.disabled,
+.boton-left[disabled],
+fieldset[disabled] .boton-left,
+.boton-left.disabled:hover,
+.boton-left[disabled]:hover,
+fieldset[disabled] .boton-left:hover,
+.boton-left.disabled:focus,
+.boton-left[disabled]:focus,
+fieldset[disabled] .boton-left:focus,
+.boton-left.disabled:active,
+.boton-left[disabled]:active,
+fieldset[disabled] .boton-left:active,
+.boton-left.disabled.active,
+.boton-left[disabled].active,
+fieldset[disabled] .boton-left.active {
+    background-color: #ededed;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.boton-left .badge {
+    color: #8EC5FC;
+    background-color: #ffffff;
 }
