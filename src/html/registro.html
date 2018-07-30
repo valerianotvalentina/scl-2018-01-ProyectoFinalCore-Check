@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +15,13 @@
     <span class="navbar-text">
           Ingrese sus datos de registro
         </span>
-    <button type="button" class="btn boton-next"><i class="fas fa-arrow-right"></i></button>
+    <button type="button" class="btn boton-next"><i class="fas fa-arrow-right" onclick="saveUser()"></i></button>
 </nav>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-
             </div>
             <div class="col-8">
                 <form>
@@ -35,9 +33,9 @@
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
-                        <input type="text" class="form-control textoIngreso" id="rut"><span class="placeholder">
-                                Rut
-                            </span>
+                        <input type="text" class="form-control textoIngreso" id="rutUser"><span class="placeholder">
+                                Rut <b class="asterisco"> *</b>
+                        </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
@@ -50,19 +48,20 @@
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="enterpriseFrom">
                         <span class="placeholder">
-                            Empresa donde trabajas
+                            Empresa donde trabajas <b class="asterisco"> *</b>
                         </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
-                        <input type="text" class="form-control textoIngreso" id="patente">
+                        <input type="text" class="form-control textoIngreso" id="patenteUser">
                         <span class="placeholder">
                                 Patente vehículo
-                            </span>
+                        </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
-                        <input type="text" class="form-control textoIngreso" id="collaboratorName">
+                        <input type="text" class="form-control textoIngreso" id="collaboratorName" list="usersDataList">
+                        <datalist id="usersDataList"></datalist>
                         <span class="placeholder">
                             ¿A quién visitas? <b class="asterisco"> *</b>
                         </span>
@@ -73,38 +72,47 @@
                         </span>
                         <div class="checkboxMotivo">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Reunión</label>
+                                <input type="radio" class="custom-control-input" name="reasonVisit" id="meetingCheck">
+                                <label class="custom-control-label" for="meetingCheck">Reunión</label>
                             </div>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                <label class="custom-control-label" for="customCheck2">Entrevista</label>
+                                <input type="radio" class="custom-control-input" name="reasonVisit" id="interviewCheck">
+                                <label class="custom-control-label" for="interviewCheck">Entrevista</label>
                             </div>
                             <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                <label class="custom-control-label" for="customCheck3">Motivos personales</label>
+                                <input type="radio" class="custom-control-input" name="reasonVisit" id="personalCheck">
+                                <label class="custom-control-label" for="personalCheck">Motivos personales</label>
                             </div>
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                <label class="custom-control-label" for="customCheck4">Otros</label>
+                                <input type="radio" class="custom-control-input" name="reasonVisit" id="otherCheck">
+                                <label class="custom-control-label" for="otherCheck">Otros</label>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col">
-
             </div>
         </div>
     </div>
-
     <footer>
     </footer>
-
-
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCJaWLBBmHvy3xeg5kkLdGw3ysBH7nG7jc",
+            authDomain: "conserjeapp-7633f.firebaseio.com",
+            databaseURL: "https://conserjeapp-7633f.firebaseio.com/",
+            projectId: "conserjeapp-7633f",
+            storageBucket: "gs://conserjeapp-7633f.appspot.com",
+            messagingSenderId: "288945821020"
+        };
+        firebase.initializeApp(config);
+    </script> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="../js/registro.js"></script>
 </body>
-
 </html>
