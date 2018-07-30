@@ -8,12 +8,15 @@ const constraints = {
   const img = document.getElementById('imgFoto');
   const canvas = document.createElement('canvas');
 
+  let register = JSON.parse(localStorage.getItem("register"));
+  localStorage.removeItem("register");
+  console.log(register);
+
   navigator.mediaDevices.getUserMedia(constraints).
     then(handleSuccess).catch(handleError);
   
   img.style.display = 'none';
   enableVideo.style.display = 'none';
-
 
   enableVideo.onclick = function() {
     video.style.display = 'block';
@@ -58,16 +61,15 @@ const constraints = {
 
     function savePhoto(){
         console.log("boton guardar");
-        subirArchivo(dataURLtoBlob(img.src),'idKey.jpg');
+        let newRegistroKey = firebase.database().ref().child('registros').push().key;
+        subirArchivo(dataURLtoBlob(img.src), newRegistroKey + '.jpg', newRegistroKey);
         
     }
 
-  function subirArchivo(archivo, nombre) {
+  function subirArchivo(archivo, nombre, key) {
     console.log('Subir Archivo');
     console.log(archivo);
     console.log(nombre);
-
-
     let storageService = firebase.storage();
     // creo una referencia al lugar donde guardaremos el archivo
     let refStorage = storageService.ref('userImages').child(nombre);
@@ -82,10 +84,29 @@ const constraints = {
             //obtiene la url de la imagen recien subida
             uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                 //cambia el source de la imagen por la url de la imagen recien subida
-                //document.getElementById('imgReview').src = downloadURL;
-                console.log('Listo, quedo en :' + downloadURL)
+                console.log('Listo, quedo en :' + downloadURL + ' y la key ' + key);
+                saveData(downloadURL,key);
               });
         }
     );
 }
+function saveData(urlPicture , key){
+    console.log('saveData');
+    console.log(urlPicture);
+    firebase.database().ref(`registros/${key}`).set({
+        userName : register.userName,
+        rutUser : register.rutUser,
+        eMail : register.eMail,
+        enterpriseFrom : register.enterpriseFrom,
+        patenteUser : register.patenteUser,
+        urlPicture : urlPicture,
+        collaboratorName : register.collaboratorName,
+        createTime: register.createTime,
+        reasonVisit : register.reasonVisit
+    }, function(error){
+       //aqui deberia ir el envio a correo.
+       localStorage.setItem('registerKey',key);
+       window.location = 'credencial.html';
+   }); 
 
+}

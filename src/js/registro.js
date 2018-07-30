@@ -3,6 +3,11 @@ function saveUser(){
     let newUser = getForm();
     console.log(newUser);
     if(validateform(newUser) === true){
+      
+      localStorage.setItem('register',JSON.stringify(newUser));
+     
+/*
+
         let newRegistroKey = firebase.database().ref().child('registros').push().key;
         console.log(newRegistroKey);
         firebase.database().ref(`registros/${newRegistroKey}`).set({
@@ -17,6 +22,8 @@ function saveUser(){
             //console.log('Listo!!!!');
            window.location = 'picture.html';
        });  
+       */
+      window.location = 'picture.html';
     }else{
         console.log('Faltan campos importantes!!!');
     }
@@ -35,6 +42,10 @@ function getForm(){
   if(document.getElementById("otherCheck").checked === true) {
     reasonVisit = 'other';
   }
+  let dateTime = new Date();
+  let nowDateTime = dateTime.getDate() + '/' + (dateTime.getMonth() +1) + '/' + dateTime.getFullYear() +
+                    ' ' + dateTime.getHours() + ':' + dateTime.getMinutes();
+
   let newUser = {
      userName : document.getElementById("userName").value,
      rutUser : document.getElementById("rutUser").value,
@@ -42,6 +53,7 @@ function getForm(){
      enterpriseFrom : document.getElementById("enterpriseFrom").value,
      patenteUser : document.getElementById("patenteUser").value,
      collaboratorName : document.getElementById("collaboratorName").value,
+     createTime: nowDateTime,
      reasonVisit : reasonVisit
   } 
   return newUser;
@@ -92,12 +104,12 @@ function validarEmail(valor) {// Valida que mail cumpla con formato
 
 function main(){
   document.getElementById('usersDataList').innerHTML = '';// Limpia Data list
-  firebase.database().ref('residentes')
+  firebase.database().ref('residentes').limitToLast(1000)
   .on('child_added', (resident)=>{
-    console.log(resident);
-    let names = `<option value="${resident.name}">`;// Crea objeto option y en su valor agrega el nombre del usuario
+    console.log(resident.val().name);
+    let names = `<option value="${resident.val().name}">`;// Crea objeto option y en su valor agrega el nombre del usuario
     document.getElementById('usersDataList').innerHTML += names;
   });
 }
 //se comenta hasta que se confirme el formato en firebase
-//main();
+main();
