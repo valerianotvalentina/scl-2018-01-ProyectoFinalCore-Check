@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #706f6f;
 }
 
 .fa-check {
@@ -114,6 +115,72 @@ fieldset[disabled] .boton-left.active {
     background-color: #ffffff;
 }
 
-#imgUser{
+#imgUser {
     width: 100%;
+}
+
+.registroOk {
+    margin-top: 50px;
+}
+
+.tarjetaRegistro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.mensajeFinal {
+    margin-bottom: 80px;
+}
+
+.btn-primary {
+    height: 100%;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #8ec5fc 0%, #e0c3fc 100%);
+    border: 0px solid #E0C3FC;
+    border-radius: 5px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #8EC5FC;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.btn-primary .badge {
+    color: #8EC5FC;
+    background-color: #ffffff;
 }

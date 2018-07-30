@@ -21,40 +21,35 @@
 </nav>
 
 <body>
-    <div class="container">
+    <div class="container registroOk">
         <div class="row">
             <div class="col">
-
             </div>
-            <div class="col-12">
-                <h4>Bienvenido (a)</h4>
+            <div class="col-12 text-center">
+                <h4>Bienvenido(a)</h4>
             </div>
             <div class="col">
-
             </div>
         </div>
         <div class="row">
-                <div class="col">
-    
-                </div>
-                <div class="col-12">
-                    <h6 id="notificado">cargando...</h6>
-                </div>
-                <div class="col">
-    
-                </div>
-            </div>         
+            <div class="col">
+            </div>
+            <div class="col-12 text-center">
+                <h6 id="notificado">cargando...</h6>
+            </div>
+            <div class="col">
+            </div>
+        </div>
         <div class="row">
             <div class="col">
-
             </div>
-            <div class="col-12">
+            <div class="col-12 tarjetaRegistro">
                 <div class="container">
                     <div class="row">
                         <div class="col-5">
-                            <img id="imgUser" src=""/>
+                            <img id="imgUser" src="" />
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 text-right">
                             <div class="row">
                                 <h3 id="userName">cargando...</h3>
                             </div>
@@ -69,33 +64,35 @@
                 </div>
             </div>
             <div class="col">
-
             </div>
-        </div>        
-            
-       
+        </div>
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container mensajeFinal">
             <div class="row">
                 <div class="col">
-    
+
                 </div>
-                <div class="col-8">
-                    <h5>Su tarjeta de ingreso a sido enviada a su correo</h5>
+                <div class="col-8 text-center">
+                    <h5>Su tarjeta de ingreso ha sido enviada a su correo electrónico</h5>
                 </div>
                 <div class="col">
-    
+
                 </div>
             </div>
-        </div>  
+        </div>
         <div class="row">
-                <div class="col-12">
-                    <button id="capturePicture" type="button" class="btn btn-primary btn-lg btn-block" >Imprimir</button>
-                   
-                </div>
-            </div>    
+            <div class="col">
+
+            </div>
+            <div class="col-6 text-center imprimir">
+                <button id="capturePicture" type="button" class="btn btn-primary btn-lg btn-block"><span>Imprimir tarjeta de ingreso</span></button>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script>
@@ -109,7 +106,7 @@
             messagingSenderId: "288945821020"
         };
         firebase.initializeApp(config);
-    </script> 
+    </script>
     <script src="../js/qrcode.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
