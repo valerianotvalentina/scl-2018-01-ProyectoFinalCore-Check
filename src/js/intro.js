@@ -1,7 +1,7 @@
 /*   window.onload = timeout;
 
     function timeout() {
-        window.setTimeout("redirect()", 5000)
+        window.setTimeout("redirect()", 1500)
     }
 
     function redirect() {
