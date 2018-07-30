@@ -44,11 +44,33 @@ const constraints = {
       console.error('Error: ', error);
   }
 
+  function dataURLtoBlob(dataurl) {
+    console.log(dataurl);
+
+    var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+    while(n--){
+        u8arr[n] = bstr.charCodeAt(n);
+    }
+    console.log('Enviando foto');
+    return new Blob([u8arr], {type:mime});
+  }
+
+    function savePhoto(){
+        console.log("boton guardar");
+        subirArchivo(dataURLtoBlob(img.src),'idKey.jpg');
+        
+    }
 
   function subirArchivo(archivo, nombre) {
+    console.log('Subir Archivo');
+    console.log(archivo);
+    console.log(nombre);
+
+
     let storageService = firebase.storage();
     // creo una referencia al lugar donde guardaremos el archivo
-    let refStorage = storageService.ref('userImages').child(currentUser.uid + archivo.name);
+    let refStorage = storageService.ref('userImages').child(nombre);
     // Comienzo la tarea de upload
     const uploadTask = refStorage.put(archivo);
     // defino un evento para saber qué pasa con ese upload iniciado
@@ -61,7 +83,7 @@ const constraints = {
             uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                 //cambia el source de la imagen por la url de la imagen recien subida
                 //document.getElementById('imgReview').src = downloadURL;
-                console.log()
+                console.log('Listo, quedo en :' + downloadURL)
               });
         }
     );

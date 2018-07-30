@@ -89,3 +89,15 @@ function validarEmail(valor) {// Valida que mail cumpla con formato
         return false;
     }
 } 
+
+function main(){
+  document.getElementById('usersDataList').innerHTML = '';// Limpia Data list
+  firebase.database().ref('residentes')
+  .on('child_added', (resident)=>{
+    console.log(resident);
+    let names = `<option value="${resident.name}">`;// Crea objeto option y en su valor agrega el nombre del usuario
+    document.getElementById('usersDataList').innerHTML += names;
+  });
+}
+//se comenta hasta que se confirme el formato en firebase
+//main();

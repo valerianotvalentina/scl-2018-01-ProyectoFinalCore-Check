@@ -15,7 +15,7 @@
     <span class="navbar-text">
     Sonría a la cámara
     </span>
-    <button type="button" class="btn boton-next"><i class="fas fa-arrow-right" onclick=""></i></button>
+    <button type="button" class="btn boton-next" onclick="savePhoto()"><i class="fas fa-arrow-right" ></i></button>
 </nav>
 <body>
     <div class="container">
@@ -42,6 +42,18 @@
 <footer>
 </footer>
 <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCJaWLBBmHvy3xeg5kkLdGw3ysBH7nG7jc",
+        authDomain: "conserjeapp-7633f.firebaseio.com",
+        databaseURL: "https://conserjeapp-7633f.firebaseio.com/",
+        projectId: "conserjeapp-7633f",
+        storageBucket: "gs://conserjeapp-7633f.appspot.com",
+        messagingSenderId: "288945821020"
+    };
+    firebase.initializeApp(config);
+</script> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
