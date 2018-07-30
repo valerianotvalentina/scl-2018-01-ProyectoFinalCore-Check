@@ -42,6 +42,10 @@ function getForm(){
   if(document.getElementById("otherCheck").checked === true) {
     reasonVisit = 'other';
   }
+  let dateTime = new Date();
+  let nowDateTime = dateTime.getDate() + '/' + (dateTime.getMonth() +1) + '/' + dateTime.getFullYear() +
+                    ' ' + dateTime.getHours() + ':' + dateTime.getMinutes();
+
   let newUser = {
      userName : document.getElementById("userName").value,
      rutUser : document.getElementById("rutUser").value,
@@ -49,6 +53,7 @@ function getForm(){
      enterpriseFrom : document.getElementById("enterpriseFrom").value,
      patenteUser : document.getElementById("patenteUser").value,
      collaboratorName : document.getElementById("collaboratorName").value,
+     createTime: nowDateTime,
      reasonVisit : reasonVisit
   } 
   return newUser;

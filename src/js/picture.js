@@ -12,7 +12,6 @@ const constraints = {
   localStorage.removeItem("register");
   console.log(register);
 
-
   navigator.mediaDevices.getUserMedia(constraints).
     then(handleSuccess).catch(handleError);
   
@@ -91,7 +90,6 @@ const constraints = {
         }
     );
 }
-
 function saveData(urlPicture , key){
     console.log('saveData');
     console.log(urlPicture);
@@ -103,9 +101,11 @@ function saveData(urlPicture , key){
         patenteUser : register.patenteUser,
         urlPicture : urlPicture,
         collaboratorName : register.collaboratorName,
+        createTime: register.createTime,
         reasonVisit : register.reasonVisit
     }, function(error){
-
+       //aqui deberia ir el envio a correo.
+       localStorage.setItem('registerKey',key);
        window.location = 'credencial.html';
    }); 
 

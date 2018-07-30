@@ -113,3 +113,7 @@ fieldset[disabled] .boton-left.active {
     color: #8EC5FC;
     background-color: #ffffff;
 }
+
+#imgUser{
+    width: 100%;
+}
