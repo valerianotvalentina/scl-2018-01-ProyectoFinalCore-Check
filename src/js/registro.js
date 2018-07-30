@@ -3,6 +3,11 @@ function saveUser(){
     let newUser = getForm();
     console.log(newUser);
     if(validateform(newUser) === true){
+      
+      localStorage.setItem('register',JSON.stringify(newUser));
+     
+/*
+
         let newRegistroKey = firebase.database().ref().child('registros').push().key;
         console.log(newRegistroKey);
         firebase.database().ref(`registros/${newRegistroKey}`).set({
@@ -17,6 +22,8 @@ function saveUser(){
             //console.log('Listo!!!!');
            window.location = 'picture.html';
        });  
+       */
+      window.location = 'picture.html';
     }else{
         console.log('Faltan campos importantes!!!');
     }
@@ -92,12 +99,12 @@ function validarEmail(valor) {// Valida que mail cumpla con formato
 
 function main(){
   document.getElementById('usersDataList').innerHTML = '';// Limpia Data list
-  firebase.database().ref('residentes')
+  firebase.database().ref('residentes').limitToLast(1000)
   .on('child_added', (resident)=>{
-    console.log(resident);
-    let names = `<option value="${resident.name}">`;// Crea objeto option y en su valor agrega el nombre del usuario
+    console.log(resident.val().name);
+    let names = `<option value="${resident.val().name}">`;// Crea objeto option y en su valor agrega el nombre del usuario
     document.getElementById('usersDataList').innerHTML += names;
   });
 }
 //se comenta hasta que se confirme el formato en firebase
-//main();
+main();
