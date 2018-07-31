@@ -5,7 +5,7 @@ const lista = document.getElementById("listaVisitas")
 const inputText = document.querySelector("input");
 const boton = document.getElementById("boton");
 const listaVisita = document.getElementById("ConteoVisitas");
-let listaResidentes = document.getElementById("listaResidentes");
+const listaResidentes = document.getElementById("listaResidentes");
 const botonListaResidentes = document.getElementById("botonResidentes")
 
 //guardar nuevo residente
