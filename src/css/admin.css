@@ -285,7 +285,7 @@ fieldset[disabled] .boton-next.active {
 }
 
 #name {
-    width: 100%;
+    width: 90%;
     height: 30px;
     color: #575756;
     font-size: 15px;
@@ -296,7 +296,7 @@ fieldset[disabled] .boton-next.active {
 }
 
 #mail {
-    width: 100%;
+    width: 90%;
     height: 30px;
     color: #575756;
     font-size: 15px;
@@ -329,7 +329,7 @@ fieldset[disabled] .boton-next.active {
 }
 
 #Residente {
-    width: 100%;
+    width: 90%;
     height: 30px;
     color: #575756;
     font-size: 15px;
@@ -341,4 +341,12 @@ fieldset[disabled] .boton-next.active {
 .col-6 {
     padding-right: 0px;
     padding-left: 0px;
+}
+
+.datos {
+    margin-bottom: 3px;
+}
+
+.visitante {
+    margin-bottom: 25px;
 }
