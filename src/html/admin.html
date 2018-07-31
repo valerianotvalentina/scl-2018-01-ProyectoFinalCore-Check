@@ -31,45 +31,58 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col"></div>
-            <div class=col-8>
+            <div class="col-12 text-right">
+                <button type="button" id="botonLogout" onclick="logoutWithFirebase()"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-left cajaUno">
                 <form>
-                    Nombre residente
-                    <input type="text" id="name" name="Nombre residente"> Correo electrónico
-                    <input type="text" id="mail" name="Mail">
+                    <div>
+                        <p class="tituloCajaUno"><i class="fas fa-user-plus"></i>Agregar nuevo residente</p>
+                    </div>
+                    <div>Nombre residente <input type="text" id="name" name="Nombre residente"></div>
+                    <div>Correo electrónico <input type="text" id="mail" name="Mail"></div>
                     <button type="submit" id="save">Guardar</button>
                 </form>
             </div>
+            <div class="col-6"></div>
+        </div>
 
-            <div class="col-12 col-md-12 text-center">
-                <form>
-                    Nombre residente
-                    <input type="text" id="name" name="Nombre residente"> Correo electrónico
-                    <input type="text" id="mail" name="Mail">
-                    <button type="submit" id="save">Guardar</button>
-                </form>
-                <div class="col-12">
-                    <input type="text" id="Residente" placeholder="Nombre residente">
-                    <button type="button" id="boton">Buscar</button>
-                    <div class="col-12">
-                        <div id="ConteoVisitas"></div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button id="botonResidentes">Lista de residentes</button>
-                </div>
-                <div class="col-12">
-                    <div id="listaResidentes"></div>
-                </div>
-                <div class="col-12">
-                    <button id="botonVisitantes">Lista de visitas</button>
-                </div>
-                <div class="col-12">
-                    <div id="listaVisitas"></div>
-                </div>
+        <div class="row cajaDos">
+            <div class="col-6 text-left">
                 <div>
-                    <button type="button" id="botonLogout" onclick="logoutWithFirebase()">Cerrar sesión</button>
+                    <p class="tituloCajaUno"><i class="far fa-eye"></i>Buscar visitas realizadas al residente</p>
                 </div>
+                <input type="text" id="Residente" placeholder="Nombre residente">
+                <button type="button" id="boton" class="botonBuscar">Buscar</button>
+            </div>
+            <div class="col-6 text-left">
+                <div id="ConteoVisitas"></div>
+            </div>
+        </div>
+
+        <div class="row cajaTres">
+            <div class="col-6 text-left">
+                <div>
+                    <p class="tituloCajaUno"><i class="fas fa-list-ul"></i>Ver lista de residentes</p>
+                </div>
+                <button id="botonResidentes">Ver lista</button>
+            </div>
+            <div class="col-6 text-left">
+                <div id="listaResidentes"></div>
+            </div>
+        </div>
+
+        <div class="row cajaCuatro">
+            <div class="col-6 text-left">
+                <div>
+                    <p class="tituloCajaUno"><i class="fas fa-list-ul"></i>Ver lista de visitas</p>
+                </div>
+                <button id="botonVisitantes">Ver lista</button>
+            </div>
+            <div class="col-6 text-left">
+                <div id="listaVisitas"></div>
             </div>
         </div>
     </div>
