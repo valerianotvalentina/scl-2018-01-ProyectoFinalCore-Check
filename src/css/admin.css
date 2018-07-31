@@ -63,7 +63,7 @@ fieldset[disabled] .boton-left.active {
 .navbar-text {
     font-family: 'Days One', sans-serif;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
 }
@@ -114,5 +114,55 @@ fieldset[disabled] .boton-right.active {
 }
 
 .boton-right .badge {
+    background-color: #f8f9fa;
+}
+
+.boton-next {
+    height: 100%;
+    color: #ffffff;
+    background-color: #f8f9fa;
+    border: 0px solid #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-next:hover,
+.boton-next:focus,
+.boton-next:active,
+.boton-next.active,
+.open .dropdown-toggle.boton-next {
+    color: #ffffff;
+    background-color: #f8f9fa;
+    border: 0px solid #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-next:active,
+.boton-next.active,
+.open .dropdown-toggle.boton-next {
+    background-image: none;
+}
+
+.boton-next.disabled,
+.boton-next[disabled],
+fieldset[disabled] .boton-next,
+.boton-next.disabled:hover,
+.boton-next[disabled]:hover,
+fieldset[disabled] .boton-next:hover,
+.boton-next.disabled:focus,
+.boton-next[disabled]:focus,
+fieldset[disabled] .boton-next:focus,
+.boton-next.disabled:active,
+.boton-next[disabled]:active,
+fieldset[disabled] .boton-next:active,
+.boton-next.disabled.active,
+.boton-next[disabled].active,
+fieldset[disabled] .boton-next.active {
+    background-color: #f8f9fa;
+    border: 0px solid #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-next .badge {
+    color: #f8f9fa;
     background-color: #f8f9fa;
 }
