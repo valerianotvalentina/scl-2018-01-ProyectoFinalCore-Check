@@ -1,28 +1,62 @@
 var database = firebase.database();
-const botonSave= document.getElementById("save");
-const botonVerLista= document.getElementById("botonVisitantes")
-const lista= document.getElementById("listaRegistro")
+const botonSave = document.getElementById("save");
+const botonVerLista = document.getElementById("botonVisitantes")
+const lista = document.getElementById("listaVisitas")
+const inputText = document.querySelector("input");
+const boton = document.getElementById("boton");
+const listaVisita = document.getElementById("ConteoVisitas");
+let listaResidentes = document.getElementById("listaResidentes");
+const botonListaResidentes = document.getElementById("botonResidentes")
 
-botonSave.addEventListener("click", event=>{
-  let name= document.getElementById("name").value;
-  let mail= document.getElementById("mail").value;
+//guardar nuevo residente
+botonSave.addEventListener("click", event => {
+  let name = document.getElementById("name").value;
+  let mail = document.getElementById("mail").value;
   var newPostRef = database.ref("/residentes/").push();
   newPostRef.set({
     name: name,
     mail: mail,
+  })
 })
-})
 
-
-botonVerLista.addEventListener("click", event=>{
-  database.ref('/registros/').on('child_added', function(snapshot){
-  let name = snapshot.val().collaboratorName;
-  let mail= snapshot.val().eMail;
-
-  lista.innerHTML += `<div class= "visitante">
-    <p>Nombre Visita: ${name}</p>
+//lista registro visitas
+botonVerLista.addEventListener("click", event => {
+  database.ref('/registros/').on('child_added', function (snapshot) {
+    let visitante = snapshot.val().userName;
+    let mail = snapshot.val().eMail;
+    lista.innerHTML += `<div class= "visitante">
+    <p>Nombre Visita: ${visitante}</p>
     <p>Mail Visita: ${mail}</p>
-    </div>`    
+    </div>`
+  })
+})
+/* <p>Visita a: ${residente}</p>     let residente= snapshot.val().collaboratorName; */ 
+
+
+//lista registro residentes
+botonListaResidentes.addEventListener("click", event => {
+  database.ref('/residentes/').on('child_added', function (snapshot) {
+    let residente = snapshot.val().name;
+    listaResidentes.innerHTML += `<div class= "visitante">
+    <p>Nombre Residente: ${residente}</p>    
+    </div>`
+  })
+})
+
+//input buscar visitas por residente
+boton.addEventListener("click", event => {
+  let nameResidente = document.getElementById("Residente").value;
+  listaVisita.innerHTML = `<p>Las visitas que a recibido ${nameResidente} Son:</p>`
+  database.ref('/registros/').on('child_added', function (snapshot) {
+    let residente = snapshot.val().collaboratorName;
+    let visitante = snapshot.val().userName;
+    console.log(snapshot.val())
+    if (residente.indexOf(nameResidente) != -1) {
+      listaVisita.innerHTML +=
+        `<div class= "visitante">   
+    <p>${visitante}</p> 
+    </div>`
+    }
   })
 })
 
