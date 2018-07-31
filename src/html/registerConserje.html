@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 text-center">
+				<div id="register">
+					<div id="msnUsuario">
+						<p></p>
+					</div>
+					<form>
+						<div>
+							<input class="inputRegistro" id="email" type="email" placeholder="Correo electrónico">
+						</div>
+						<div>
+							<input class="inputRegistro" id="password" type="password" placeholder="Contraseña">
+						</div>
+						<div>
+							<input class="botonRegistro" id="registerButton" onclick="registerWithFirebase();" type="button" value="Registrarse">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCJaWLBBmHvy3xeg5kkLdGw3ysBH7nG7jc",
+			authDomain: "conserjeapp-7633f.firebaseapp.com",
+			databaseURL: "https://conserjeapp-7633f.firebaseio.com",
+			projectId: "conserjeapp-7633f",
+			storageBucket: "conserjeapp-7633f.appspot.com",
+			messagingSenderId: "89686394943"
+		};
+		firebase.initializeApp(config);  
+	</script>
+
+	<script src="../js/registerConserje.js"></script>
+
+</body>
+
+</html>
