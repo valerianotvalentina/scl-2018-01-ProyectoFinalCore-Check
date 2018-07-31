@@ -13,5 +13,11 @@ function getData(){ //Obtiene datos de Firebase con KEY
         document.getElementById('userDateTime').innerText = user.val().createTime;
         document.getElementById('notificado').innerText = 'Hemos notificado a '+ user.val().collaboratorName +' de tu visita. Espera que venga por ti.';
     });
+
+
 }
+
+
+
+
 getData();
