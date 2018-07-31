@@ -1,6 +1,6 @@
 # Proyecto Final Common Core
 
-## CHECK
+## C H E C K
 
 El registro de visitantes en las empresas Latinoamericanas es un proceso en general tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Como vivimos en la era digital planteamos nuestra solución creando una interfaz que permite al visitante realizar su ingreso en recepción por medio de una tablet, donde se solicitaran datos básicos de identificación y una fotografía.
 
@@ -20,6 +20,9 @@ Los integrantes del Equipo son:
       Implementar la interfaz de usuario diseñada (HTML/CSS/JS).
 
 ## Entrevistas
+
+(https://docs.google.com/document/d/18EkdIh1XidEnjCW9tUCOa52JRaREPmKkTVtT-1K4O_w/edit?usp=sharing)
+
 
 ## Cliente Incógnito
 
@@ -46,12 +49,12 @@ El tiempo desde que la recepcionista me atiende, toma mis datos, contacta y conf
 ![Prototipo iteración 1](img/bajaFidelidad.jpg)
 
 ## Prototipo de Alta Fidelidad
-El prototipo de Alta Fidelidad fue realizado en Fixma, puedes acceder ingresando al siguiente link.
+El prototipo de Alta Fidelidad fue realizado en Figma, puedes acceder ingresando al siguiente link.
 (https://www.figma.com/file/NpJHXb1JJ0is6XHz6vTERYij/Check-Registro-de-visitas?node-id=0%3A1)
 
 ## Organización
 
-La Organización del Equipo puede revisarla en este link.
+La Organización del Equipo puedes revisarla en este link.
 (https://trello.com/b/GefglG1c/registro-usuario)
 
 
