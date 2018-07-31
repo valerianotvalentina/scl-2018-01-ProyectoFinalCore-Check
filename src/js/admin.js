@@ -21,6 +21,7 @@ botonSave.addEventListener("click", event => {
 
 //lista registro visitas
 botonVerLista.addEventListener("click", event => {
+  lista.innerHTML= "";
   database.ref('/registros/').on('child_added', function (snapshot) {
     let visitante = snapshot.val().userName;
     let mail = snapshot.val().eMail;
@@ -37,6 +38,7 @@ botonVerLista.addEventListener("click", event => {
 
 //lista registro residentes
 botonListaResidentes.addEventListener("click", event => {
+  listaResidentes.innerHTML= "";
   database.ref('/residentes/').on('child_added', function (snapshot) {
     let residente = snapshot.val().name;
     listaResidentes.innerHTML += `<div class= "visitante">
@@ -44,6 +46,7 @@ botonListaResidentes.addEventListener("click", event => {
     </div>`
   })
 })
+
 
 //input buscar visitas por residente
 boton.addEventListener("click", event => {
