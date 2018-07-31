@@ -1,0 +1,187 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #706f6f;
+}
+
+.fa-check {
+    font-size: 50px;
+}
+
+.fa-arrow-left {
+    font-size: 50px;
+}
+
+.boton-check {
+    height: 100%;
+    color: #343D58;
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.boton-check:hover,
+.boton-check:focus,
+.boton-check:active,
+.boton-check.active,
+.open .dropdown-toggle.boton-check {
+    color: #343D58;
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.boton-check:active,
+.boton-check.active,
+.open .dropdown-toggle.boton-check {
+    background-image: none;
+}
+
+.boton-check.disabled,
+.boton-check[disabled],
+fieldset[disabled] .boton-check,
+.boton-check.disabled:hover,
+.boton-check[disabled]:hover,
+fieldset[disabled] .boton-check:hover,
+.boton-check.disabled:focus,
+.boton-check[disabled]:focus,
+fieldset[disabled] .boton-check:focus,
+.boton-check.disabled:active,
+.boton-check[disabled]:active,
+fieldset[disabled] .boton-check:active,
+.boton-check.disabled.active,
+.boton-check[disabled].active,
+fieldset[disabled] .boton-check.active {
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.boton-check .badge {
+    color: #343D58;
+    background-color: #343D58;
+}
+
+footer {
+    height: 80px;
+}
+
+.boton-left {
+    height: 100%;
+    color: #343D58;
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.boton-left:hover,
+.boton-left:focus,
+.boton-left:active,
+.boton-left.active,
+.open .dropdown-toggle.boton-left {
+    color: #343D58;
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.boton-left:active,
+.boton-left.active,
+.open .dropdown-toggle.boton-left {
+    background-image: none;
+}
+
+.boton-left.disabled,
+.boton-left[disabled],
+fieldset[disabled] .boton-left,
+.boton-left.disabled:hover,
+.boton-left[disabled]:hover,
+fieldset[disabled] .boton-left:hover,
+.boton-left.disabled:focus,
+.boton-left[disabled]:focus,
+fieldset[disabled] .boton-left:focus,
+.boton-left.disabled:active,
+.boton-left[disabled]:active,
+fieldset[disabled] .boton-left:active,
+.boton-left.disabled.active,
+.boton-left[disabled].active,
+fieldset[disabled] .boton-left.active {
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.boton-left .badge {
+    color: #343D58;
+    background-color: #343D58;
+}
+
+.btn-primary {
+    height: 100%;
+    color: #343D58;
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #343D58;
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #343D58;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.btn-primary .badge {
+    color: #343D58;
+    background-color: #343D58;
+}
+
+.navbar-text {
+    font-family: 'Days One', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #343D58!important;
+}
+
+.logo {
+    width: 30%;
+}
+
+.gracias {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 200px;
+}
