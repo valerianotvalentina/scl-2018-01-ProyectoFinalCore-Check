@@ -6,7 +6,7 @@ body {
     border-top: 0px !important;
     border-left: 0px !important;
     border-right: 0px !important;
-    font-size: 15px;
+    font-size: 16px;
     color: #575756;
     margin-bottom: 5px;
 }
@@ -20,16 +20,20 @@ body {
 }
 
 .placeholder {
-    font-size: 15px;
+    font-size: 16px;
     color: #706f6f;
 }
 
 .asterisco {
     color: #8EC5FC;
+    font-weight: 400;
 }
 
 .navbar-text {
-    margin-left: 20px;
+    font-family: 'Days One', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .fa-arrow-right {
@@ -45,7 +49,7 @@ form {
 }
 
 .custom-control-label {
-    font-size: 15px;
+    font-size: 16px;
     color: #706f6f;
 }
 
@@ -109,4 +113,53 @@ fieldset[disabled] .boton-next.active {
 
 footer {
     height: 80px;
+}
+
+.fa-arrow-left {
+    font-size: 50px;
+    color: #f8f9fa;
+}
+
+.boton-left {
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-left:hover,
+.boton-left:focus,
+.boton-left:active,
+.boton-left.active,
+.open .dropdown-toggle.boton-left {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-left:active,
+.boton-left.active,
+.open .dropdown-toggle.boton-left {
+    background-image: none;
+}
+
+.boton-left.disabled,
+.boton-left[disabled],
+fieldset[disabled] .boton-left,
+.boton-left.disabled:hover,
+.boton-left[disabled]:hover,
+fieldset[disabled] .boton-left:hover,
+.boton-left.disabled:focus,
+.boton-left[disabled]:focus,
+fieldset[disabled] .boton-left:focus,
+.boton-left.disabled:active,
+.boton-left[disabled]:active,
+fieldset[disabled] .boton-left:active,
+.boton-left.disabled.active,
+.boton-left[disabled].active,
+fieldset[disabled] .boton-left.active {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-left .badge {
+    background-color: #f8f9fa;
 }

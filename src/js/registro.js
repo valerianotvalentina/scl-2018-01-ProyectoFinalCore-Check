@@ -45,6 +45,8 @@ function getForm(){
   let dateTime = new Date();
   let nowDateTime = dateTime.getDate() + '/' + (dateTime.getMonth() +1) + '/' + dateTime.getFullYear() +
                     ' ' + dateTime.getHours() + ':' + dateTime.getMinutes();
+  let collaboratorDrop =  document.getElementById("collaboratorName");
+  let collaboratorValues = collaboratorDrop.options[collaboratorDrop.selectedIndex];
 
   let newUser = {
      userName : document.getElementById("userName").value,
@@ -52,7 +54,8 @@ function getForm(){
      eMail : document.getElementById("eMail").value,
      enterpriseFrom : document.getElementById("enterpriseFrom").value,
      patenteUser : document.getElementById("patenteUser").value,
-     collaboratorName : document.getElementById("collaboratorName").value,
+     collaboratorName : collaboratorValues.text,
+     collaboratorEmail : collaboratorValues.value,
      createTime: nowDateTime,
      reasonVisit : reasonVisit
   } 
@@ -103,12 +106,16 @@ function validarEmail(valor) {// Valida que mail cumpla con formato
 } 
 
 function main(){
-  document.getElementById('usersDataList').innerHTML = '';// Limpia Data list
+  //document.getElementById('usersDataList').innerHTML = '';// Limpia Data list
+  document.getElementById('collaboratorName').innerHTML = '';
   firebase.database().ref('residentes').limitToLast(1000)
   .on('child_added', (resident)=>{
     console.log(resident.val().name);
-    let names = `<option value="${resident.val().name}">`;// Crea objeto option y en su valor agrega el nombre del usuario
-    document.getElementById('usersDataList').innerHTML += names;
+    var drop = document.getElementById("collaboratorName");
+    var option = document.createElement("option");
+    option.text = resident.val().name;
+    option.value = resident.val().mail;
+    drop.add(option);
   });
 }
 //se comenta hasta que se confirme el formato en firebase

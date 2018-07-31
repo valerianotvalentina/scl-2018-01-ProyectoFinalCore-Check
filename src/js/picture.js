@@ -101,12 +101,62 @@ function saveData(urlPicture , key){
         patenteUser : register.patenteUser,
         urlPicture : urlPicture,
         collaboratorName : register.collaboratorName,
+        collaboratorEmail : register.collaboratorEmail,
         createTime: register.createTime,
         reasonVisit : register.reasonVisit
     }, function(error){
+       
        //aqui deberia ir el envio a correo.
        localStorage.setItem('registerKey',key);
-       window.location = 'credencial.html';
+       sendMail(register, urlPicture)
+       
+       //sendMail(user);
    }); 
 
 }
+
+function sendMail(user, imgPath){//se encarga de enviar el correo
+    let params = {
+        user_id: 'user_NcXfoiOxLJgnHnL05ujzH',
+        service_id: 'gmailloreto',
+        template_id: 'credencial',
+        template_params: {//parametros para el template de emailjs
+            'toMail': register.collaboratorEmail,
+            'ccMail': register.eMail,
+            'username': register.collaboratorName,
+            'visitaName':register.userName,
+            'imgPath':imgPath
+        }
+    };
+ 
+    let headers = {//para que envie la solicitud como un json
+        "Content-type": "application/json"
+    };
+ 
+    let options = {//opciones de envio para emailjs
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(params)
+    };
+ 
+    fetch('https://api.emailjs.com/api/v1.0/email/send', options)
+        .then((httpResponse) => {
+            if (httpResponse.ok) {
+                window.location = 'credencial.html';//si se envia correctamente el email,redirecciona a la credencial.
+                console.log('El e-mail se envio');
+            } else {
+                return httpResponse.text()
+                    .then(text => Promise.reject(text));
+            }
+        })
+        .catch((error) => {
+            console.log('Oops... no se pudo enviar:' + error);
+        });     
+
+
+}
+
+
+
+
+

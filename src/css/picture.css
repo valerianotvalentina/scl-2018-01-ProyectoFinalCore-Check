@@ -11,7 +11,10 @@ body {
 }
 
 .navbar-text {
-    margin-left: 20px;
+    font-family: 'Days One', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .fa-arrow-right {

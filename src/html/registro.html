@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/registro.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
     <link rel="icon" href="../../img/favicon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Check - Registro</title>
 </head>
 <nav class="navbar sticky-top navbar-light bg-light">
+    <div>
+        <button class="btn boton-left disabled" type="submit" form="index" value="Submit"><i class="fas fa-arrow-left"></i></button>
+    </div>
     <span class="navbar-text">
           Ingrese sus datos de registro
         </span>
@@ -28,42 +33,47 @@
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="userName"><span class="placeholder">
-                            Nombre completo <b class="asterisco"> *</b>
+                            Nombre completo <b class="asterisco"> (obligatorio)</b>
                         </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="rutUser"><span class="placeholder">
-                                Rut <b class="asterisco"> *</b>
+                                Rut <b class="asterisco"> (obligatorio)</b>
                         </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="eMail">
                         <span class="placeholder">
-                            Correo electrónico <b class="asterisco"> *</b>
+                            Correo electrónico <b class="asterisco"> (obligatorio)</b>
                         </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="enterpriseFrom">
                         <span class="placeholder">
-                            Empresa donde trabajas <b class="asterisco"> *</b>
+                            Empresa donde trabajas <b class="asterisco"> (obligatorio)</b>
                         </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
                         <input type="text" class="form-control textoIngreso" id="patenteUser">
                         <span class="placeholder">
-                                Patente vehículo
+                                Si viene en vehículo ingrese su patente
                         </span>
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput"></label>
-                        <input type="text" class="form-control textoIngreso" id="collaboratorName" list="usersDataList">
+                        <select id="collaboratorName" class="form-control textoIngreso">
+
+                        </select>
+                        <!--
+                            <input type="text" class="form-control textoIngreso" id="collaboratorName" list="usersDataList">
                         <datalist id="usersDataList"></datalist>
+                        -->
                         <span class="placeholder">
-                            ¿A quién visitas? <b class="asterisco"> *</b>
+                            ¿A quién visitas? <b class="asterisco"> (obligatorio)</b>
                         </span>
                     </div>
                     <div class="visitaMotivo">
@@ -109,10 +119,11 @@
             messagingSenderId: "288945821020"
         };
         firebase.initializeApp(config);
-    </script> 
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="../js/registro.js"></script>
 </body>
+
 </html>

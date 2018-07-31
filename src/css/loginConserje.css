@@ -1,0 +1,126 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #343D58;
+}
+
+.logo {
+    margin-top: 150px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputRegistro {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 0px solid;
+    color: #706f6f;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.inputRegistro::placeholder {
+    color: #706f6f;
+}
+
+.botonRegistro {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%);
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.botonRegistro:hover,
+.botonRegistro:focus,
+.botonRegistro:active,
+.botonRegistro.active,
+.open .dropdown-toggle.botonRegistro {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #8ec5fc 0%, #e0c3fc 100%);
+    border: 0px solid #E0C3FC;
+    border-radius: 5px;
+}
+
+.botonRegistro:active,
+.botonRegistro.active,
+.open .dropdown-toggle.botonRegistro {
+    background-image: none;
+}
+
+.botonRegistro.disabled,
+.botonRegistro[disabled],
+fieldset[disabled] .botonRegistro,
+.botonRegistro.disabled:hover,
+.botonRegistro[disabled]:hover,
+fieldset[disabled] .botonRegistro:hover,
+.botonRegistro.disabled:focus,
+.botonRegistro[disabled]:focus,
+fieldset[disabled] .botonRegistro:focus,
+.botonRegistro.disabled:active,
+.botonRegistro[disabled]:active,
+fieldset[disabled] .botonRegistro:active,
+.botonRegistro.disabled.active,
+.botonRegistro[disabled].active,
+fieldset[disabled] .botonRegistro.active {
+    background-color: #8EC5FC;
+    border: 0px solid #8EC5FC;
+    border-radius: 5px;
+}
+
+.botonRegistro .badge {
+    color: #8EC5FC;
+    background-color: #ffffff;
+}
+
+.ingresarConCuenta {
+    text-align: right;
+    margin-top: 15px;
+    color: white;
+    font-weight: 300;
+}
+
+.entrar {
+    color: #E0C3FC;
+    font-weight: 600;
+}
+
+a:link {
+    color: #E0C3FC;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #E0C3FC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E0C3FC;
+    text-decoration: none;
+}
+
+a:active {
+    color: #E0C3FC;
+    text-decoration: none;
+}
+
+#loginConserje {
+    margin-top: 50px;
+}
+
+#msnUsuario {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
