@@ -59,3 +59,60 @@ fieldset[disabled] .boton-left.active {
     color: #8EC5FC;
     background-color: #ffffff;
 }
+
+.navbar-text {
+    font-family: 'Days One', sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fa-arrow-right {
+    font-size: 50px;
+    color: #f8f9fa;
+}
+
+.boton-right {
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-right:hover,
+.boton-right:focus,
+.boton-right:active,
+.boton-right.active,
+.open .dropdown-toggle.boton-right {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-right:active,
+.boton-right.active,
+.open .dropdown-toggle.boton-right {
+    background-image: none;
+}
+
+.boton-right.disabled,
+.boton-right[disabled],
+fieldset[disabled] .boton-right,
+.boton-right.disabled:hover,
+.boton-right[disabled]:hover,
+fieldset[disabled] .boton-right:hover,
+.boton-right.disabled:focus,
+.boton-right[disabled]:focus,
+fieldset[disabled] .boton-right:focus,
+.boton-right.disabled:active,
+.boton-right[disabled]:active,
+fieldset[disabled] .boton-right:active,
+.boton-right.disabled.active,
+.boton-right[disabled].active,
+fieldset[disabled] .boton-right.active {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.boton-right .badge {
+    background-color: #f8f9fa;
+}
