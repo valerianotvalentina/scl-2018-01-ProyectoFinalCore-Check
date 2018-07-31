@@ -5,7 +5,7 @@ const lista = document.getElementById("listaVisitas")
 const inputText = document.querySelector("input");
 const boton = document.getElementById("boton");
 const listaVisita = document.getElementById("ConteoVisitas");
-let listaResidentes = document.getElementById("listaResidentes");
+const listaResidentes = document.getElementById("listaResidentes");
 const botonListaResidentes = document.getElementById("botonResidentes")
 
 //guardar nuevo residente
@@ -24,9 +24,11 @@ botonVerLista.addEventListener("click", event => {
   database.ref('/registros/').on('child_added', function (snapshot) {
     let visitante = snapshot.val().userName;
     let mail = snapshot.val().eMail;
+    let fecha = snapshot.val().createTime;
     lista.innerHTML += `<div class= "visitante">
     <p>Nombre Visita: ${visitante}</p>
-    <p>Mail Visita: ${mail}</p>
+    <p>Mail: ${mail}</p>
+    <p>Registrado el: ${fecha}</p>
     </div>`
   })
 })
@@ -50,11 +52,12 @@ boton.addEventListener("click", event => {
   database.ref('/registros/').on('child_added', function (snapshot) {
     let residente = snapshot.val().collaboratorName;
     let visitante = snapshot.val().userName;
+    let fecha = snapshot.val().createTime;
     console.log(snapshot.val())
     if (residente.indexOf(nameResidente) != -1) {
       listaVisita.innerHTML +=
         `<div class= "visitante">   
-    <p>${visitante}</p> 
+    <p>${visitante} el ${fecha}</p> 
     </div>`
     }
   })
