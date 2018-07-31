@@ -13,7 +13,7 @@ p {
     color: white;
     font-weight: 400;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .inputRegistro {
@@ -83,40 +83,8 @@ fieldset[disabled] .botonRegistro.active {
     background-color: #ffffff;
 }
 
-.ingresarConCuenta {
-    text-align: right;
-    margin-top: 15px;
-    color: white;
-    font-weight: 300;
-}
-
-.entrar {
-    color: #E0C3FC;
-    font-weight: 600;
-}
-
-a:link {
-    color: #E0C3FC;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #E0C3FC;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #E0C3FC;
-    text-decoration: none;
-}
-
-a:active {
-    color: #E0C3FC;
-    text-decoration: none;
-}
-
-#loginConserje {
-    margin-top: 50px;
+.loginConserje {
+    margin-top: 30px;
 }
 
 #msnUsuario {
