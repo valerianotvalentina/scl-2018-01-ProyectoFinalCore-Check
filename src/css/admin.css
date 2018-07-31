@@ -350,3 +350,7 @@ fieldset[disabled] .boton-next.active {
 .visitante {
     margin-bottom: 25px;
 }
+.imgUser{
+    width: 80px;
+    height: 80px;
+}

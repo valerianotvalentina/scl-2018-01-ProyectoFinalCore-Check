@@ -26,7 +26,9 @@ botonVerLista.addEventListener("click", event => {
             let visitante = snapshot.val().userName;
             let mail = snapshot.val().eMail;
             let fecha = snapshot.val().createTime;
+            let urlPicture = snapshot.val().urlPicture;
             lista.innerHTML += `<div class= "visitante">
+            <img class="imgUser" src="${urlPicture}">
     <p class="datos">Nombre visita: ${visitante}</p>
     <p class="datos">Correo electrónico: ${mail}</p>
     <p class="datos">Registrado el: ${fecha}</p>
