@@ -369,11 +369,15 @@ fieldset[disabled] .boton-next.active {
 
 .visitante {
     margin-bottom: 25px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 7px;
+    padding: 15px;
 }
 
 .imgUser {
     width: 80px;
     height: 80px;
+    border-radius: 40px;
 }
 
 .numero {
