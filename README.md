@@ -2,9 +2,30 @@
 
 ## C H E C K
 
-El registro de visitantes en las empresas Latinoamericanas es un proceso en general tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Como vivimos en la era digital planteamos nuestra solución creando una interfaz que permite al visitante realizar su ingreso en recepción por medio de una tablet, donde se solicitaran datos básicos de identificación y una fotografía.
+El registro de visitantes en las empresas Latinoamericanas es un proceso en general tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Como vivimos en la era digital planteamos nuestra solución creando una interfaz que permite al visitante realizar a el mismo su propio ingreso en recepción por medio de una tablet, donde se solicitaran datos básicos de identificación además de una fotografía y firma por medio de la interfaz. 
 
-Puedes acceder al Proyecto desde el siguiente link  (https://mloretto.github.io/scl-2018-01-ProyectoFinalCore-Check/)
+La interfaz permite:
+
+* Al Administrador
+  * Agregar a un nuevo residente con nombre y correo.
+  * Visualizar el total de visitas activas. (Visitantes dentro del recinto)
+  * Visualizar el total de las visitas diarias. 
+  * Filtrar visitas recibidas por residente. 
+  * Ver listado de Residentes (Nombre y correo)
+  * Visualizar lista de visitas con Foto, Nombre, Correo, Fecha y Hora.
+
+* Al Visitante
+  * Ingresar Datos Personales para registro.
+  * Seleccionar de manera fácil al Residente a quien visita.
+  * Tomarse una Fotografía para registro y credencial de visita.
+  * Registrar su FIRMA.
+  * Obtención de Credencial, la cuál será impresa de inmediato.
+  * La interfaz envía un correo de alerta al residente con copia al visitante.
+
+
+Puedes acceder al Proyecto desde el siguiente link.
+(https://mloretto.github.io/scl-2018-01-ProyectoFinalCore-Check/)
+
 
 ## Introducción
 
@@ -21,9 +42,17 @@ Los integrantes del Equipo son:
 
 ## Entrevistas
 
+Gracias a una entrevista podemos conocer diferentes puntos de vista de otros usuarios y nos ayuda a saber más sobre algunos asuntos que no están directamente en nuestras manos, nos permiten tomar decisiones vitales para el desarrollo del proyecto.
+
+Puedes acceder a nuestras entrevistas en el siguiente link.
 (https://docs.google.com/document/d/18EkdIh1XidEnjCW9tUCOa52JRaREPmKkTVtT-1K4O_w/edit?usp=sharing)
 
+
 ## Testing de prototipo con usuarios
+
+La actividad de evaluar un producto o servicio probándolo con usuarios representativos. Normalmente, durante una prueba, los participantes tratarán de completar tareas típicas mientras los observadores observan, escuchan y toman notas. El objetivo es identificar cualquier problema de usabilidad, recopilar datos cualitativos y cuantitativos y determinar la satisfacción del participante con el producto.
+
+Puedes acceder a estos test en los siguientes link
 (https://trello-attachments.s3.amazonaws.com/5b5b1d5e0a881f95c38d06dc/5b5b1eb17598aa7a172bcf04/728427a159441d002d6edf3003636aee/3D69DFFF-10F9-4752-9924-899B280859B3.mp4)
 (https://trello-attachments.s3.amazonaws.com/5b5b1d5e0a881f95c38d06dc/5b5b1eb17598aa7a172bcf04/315929b99daf1149924366980ea84c36/53E94600-4E68-4BE2-AE97-E4E75A90598D.mp4)
 (https://trello-attachments.s3.amazonaws.com/5b5b1d5e0a881f95c38d06dc/5b5b1eb17598aa7a172bcf04/a42fe3e8230a1dc18c0d7b53f1e05895/8D88FD84-2021-40C6-9A25-901185B41E87.mp4)
@@ -48,19 +77,23 @@ El tiempo desde que la recepcionista me atiende, toma mis datos, contacta y conf
 
 ## Análisis
 
-Benchmark (https://docs.google.com/document/d/1VkenvA0UXuliywDzOqdJMzYcM-nd645OJOhE7Tdrgr8/edit?usp=sharing)
+Una de las primeras etapas para adentrarnos en el proyecto, fue estudiar a la competencia directa o indirecta y adquirir una noción general de lo que existe en el mercado. Dentro de esta fase se realiza el benchmarks, que es un proceso de análisis comparativo de interfaces, en el que destacamos las ventajas y desventajas de los elementos según criterios de diseño y contenidos.
+
+El objetivo principal de un benchmark consiste en traducir los resultados de la investigación en buenas prácticas que guiarán las propuestas de diseño y el posterior desarrollo del sitio.
+Puedes acceder al Benchmarks [aquí.] (https://docs.google.com/document/d/1VkenvA0UXuliywDzOqdJMzYcM-nd645OJOhE7Tdrgr8/edit?usp=sharing)
 
 ## Prototipo de Baja Fidelidad
 
 ![Prototipo iteración 1](img/bajaFidelidad.jpg)
 
 ## Prototipo de Alta Fidelidad
-El prototipo de Alta Fidelidad fue realizado en Figma, puedes acceder ingresando al siguiente link.
+
+El prototipo de Alta Fidelidad fue realizado en Figma, puedes acceder al prototipo en el siguiente link.
 (https://www.figma.com/file/NpJHXb1JJ0is6XHz6vTERYij/Check-Registro-de-visitas?node-id=0%3A1)
 
 ## Organización
 
-La Organización del Equipo puedes revisarla en este link.
+La Organización del Equipo puedes revisarla en el siguiente link.
 (https://trello.com/b/GefglG1c/registro-usuario)
 
 
