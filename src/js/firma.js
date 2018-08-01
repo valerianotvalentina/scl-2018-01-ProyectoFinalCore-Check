@@ -1,78 +1,95 @@
-const constraints = {
-    video: true
-  };
-  const video = document.getElementById('Video');
-  const captureVideoButton =  document.getElementById('btnCaptura');
-  const screenshotButton = document.getElementById('capturePicture');
-  const enableVideo = document.getElementById('enableVideo');
-  const img = document.getElementById('imgFoto');
-  const canvas = document.createElement('canvas');
+let register = JSON.parse(localStorage.getItem("register"));
+localStorage.removeItem("register");
+console.log(register);
 
-  let register = JSON.parse(localStorage.getItem("register"));
-  localStorage.removeItem("register");
-  console.log(register);
+const canvas = document.getElementById("Draw");
+const ctx = canvas.getContext("2d");
+let cw = canvas.width = 300,
+cx = cw / 2;
+let ch = canvas.height = 200,
+cy = ch / 2;
 
-  navigator.mediaDevices.getUserMedia(constraints).
-    then(handleSuccess).catch(handleError);
-  
-  img.style.display = 'none';
-  enableVideo.style.display = 'none';
+let dibujar = false;
+ctx.lineJoin = "round";
+// Set up touch events for mobile, etc
+canvas.addEventListener("touchstart", function (e) {
+    mousePos = getTouchPos(canvas, e);
+    let touch = e.touches[0];
+    let mouseEvent = new MouseEvent("mousedown", {
+        clientX: touch.clientX,
+        clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+}, false);
+canvas.addEventListener("touchend", function (e) {
+    let mouseEvent = new MouseEvent("mouseup", {});
+    canvas.dispatchEvent(mouseEvent);
+}, false);
+canvas.addEventListener("touchmove", function (e) {
+    let touch = e.touches[0];
+    let mouseEvent = new MouseEvent("mousemove", {
+        clientX: touch.clientX,
+        clientY: touch.clientY
+    });
+    canvas.dispatchEvent(mouseEvent);
+}, false);
 
-  enableVideo.onclick = function() {
-    video.style.display = 'block';
-    screenshotButton.style.display = 'block';
-    img.style.display = 'none';
-    enableVideo.style.display = 'none';    
-  }
+// Get the position of a touch relative to the canvas
+function getTouchPos(canvasDom, touchEvent) {
+    let rect = canvasDom.getBoundingClientRect();
+    return {
+        x: touchEvent.touches[0].clientX - rect.left,
+        y: touchEvent.touches[0].clientY - rect.top
+    };
+}
 
-  screenshotButton.onclick = function() {
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      canvas.getContext('2d').drawImage(video, 0, 0);
-      // Other browsers will fall back to image/png
-      img.src = canvas.toDataURL('image/webp');
-      
-      video.style.display = 'none';
-      screenshotButton.style.display = 'none';
-      img.style.display = 'block';
-      enableVideo.style.display = 'block';
-  };
+canvas.addEventListener('mousedown', drawDown, false);
+canvas.addEventListener('mouseup',drawUp, false);
+canvas.addEventListener("mouseout",drawOut, false);
+canvas.addEventListener("mousemove",drawMove, false);
 
-  function handleSuccess(stream) {
-      screenshotButton.disabled = false;
-      video.srcObject = stream;
-  }
+function drawDown(evt){
+    dibujar = true;
+    ctx.beginPath();
+}
+function drawUp(evt){
+    dibujar = false;
+}
+function drawOut(evt){
+    dibujar = false;
+}
+function drawMove(evt){
+    if (dibujar) {
+        let m = oMousePos(canvas, evt);
+        ctx.lineTo(m.x, m.y);
+        ctx.stroke();
+    } 
+}
 
-  function handleError(error) {
-      console.error('Error: ', error);
-  }
 
-  function dataURLtoBlob(dataurl) {
-    console.log(dataurl);
+function oMousePos(canvas, evt) {
+    let ClientRect = canvas.getBoundingClientRect();
+    return { //objeto
+        x: Math.round(evt.clientX - ClientRect.left),
+        y: Math.round(evt.clientY - ClientRect.top)
+    }  
+}      
+function clearDraw(){
+    ctx.clearRect(0, 0, cw, ch);
+}
+function saveDraw(){
+    console.log('Grabar firma');
+    var image = canvas.toDataURL("image/png");
+    subirArchivo(dataURLtoBlob(canvas.toDataURL("image/png")), register.key + '.png', register.key);
+}
 
-    var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
-        bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
-    while(n--){
-        u8arr[n] = bstr.charCodeAt(n);
-    }
-    console.log('Enviando foto');
-    return new Blob([u8arr], {type:mime});
-  }
-
-    function savePhoto(){
-        console.log("boton guardar");
-        let newRegistroKey = firebase.database().ref().child('registros').push().key;
-        subirArchivo(dataURLtoBlob(img.src), newRegistroKey + '.jpg', newRegistroKey);
-        
-    }
-
-  function subirArchivo(archivo, nombre, key) {
+function subirArchivo(archivo, nombre, key) {
     console.log('Subir Archivo');
     console.log(archivo);
     console.log(nombre);
     let storageService = firebase.storage();
     // creo una referencia al lugar donde guardaremos el archivo
-    let refStorage = storageService.ref('userImages').child(nombre);
+    let refStorage = storageService.ref('userSigning').child(nombre);
     // Comienzo la tarea de upload
     const uploadTask = refStorage.put(archivo);
     // defino un evento para saber qué pasa con ese upload iniciado
@@ -85,41 +102,38 @@ const constraints = {
             uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                 //cambia el source de la imagen por la url de la imagen recien subida
                 console.log('Listo, quedo en :' + downloadURL + ' y la key ' + key);
-                register["urlPicture"] = downloadURL;
-                register["key"] = key;
-                localStorage.setItem('register',JSON.stringify(register));
-                console.log(register);
-                window.location = 'firma.html';
-                //saveData(downloadURL,key);
+                
+                saveData(downloadURL,key);
               });
         }
     );
 }
-/*
-function saveData(urlPicture , key){
+
+
+
+function saveData(urlSigning , key){
     console.log('saveData');
-    console.log(urlPicture);
+    console.log(urlSigning);
     firebase.database().ref(`registros/${key}`).set({
         userName : register.userName,
         rutUser : register.rutUser,
         eMail : register.eMail,
         enterpriseFrom : register.enterpriseFrom,
         patenteUser : register.patenteUser,
-        urlPicture : urlPicture,
+        urlSigning : urlSigning,
+        urlPicture : register.urlPicture,
         collaboratorName : register.collaboratorName,
         collaboratorEmail : register.collaboratorEmail,
         createTime: register.createTime,
         reasonVisit : register.reasonVisit
     }, function(error){
-       
        //aqui deberia ir el envio a correo.
        localStorage.setItem('registerKey',key);
-       sendMail(register, urlPicture)
-       
-       //sendMail(user);
+       sendMail(register, register.urlPicture)
    }); 
 
 }
+
 
 function sendMail(user, imgPath){//se encarga de enviar el correo
     let params = {
@@ -161,8 +175,5 @@ function sendMail(user, imgPath){//se encarga de enviar el correo
 
 
 }
-
-*/
-
 
 
