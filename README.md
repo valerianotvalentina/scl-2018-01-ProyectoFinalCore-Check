@@ -4,8 +4,23 @@
 
 El registro de visitantes en las empresas Latinoamericanas es un proceso en general tedioso y manual. Lo común es que una persona esté en la recepción tomando nota - a veces con papel y lápiz - de cada visitante. Por razones de seguridad, usualmente piden a cada visitante dejar una identificación. Como vivimos en la era digital planteamos nuestra solución creando una interfaz que permite al visitante realizar a el mismo su propio ingreso en recepción por medio de una tablet, donde se solicitaran datos básicos de identificación además de una fotografía y firma por medio de la interfaz. 
 
+La interfaz permite:
 
+* Al Administrador
+  * Agregar a un nuevo residente con nombre y correo.
+  * Visualizar el total de visitas activas. (Visitantes dentro del recinto)
+  * Visualizar el total de las visitas diarias. 
+  * Filtrar visitas recibidas por residente. 
+  * Ver listado de Residentes (Nombre y correo)
+  * Visualizar lista de visitas con Foto, Nombre, Correo, Fecha y Hora.
 
+* Al Visitante
+  * Ingresar Datos Personales para registro.
+  * Seleccionar de manera fácil al Residente a quien visita.
+  * Tomarse una Fotografía para registro y credencial de visita.
+  * Registrar su FIRMA.
+  * Obtención de Credencial, la cuál será impresa de inmediato.
+  * La interfaz envía un correo de alerta al residente con copia al visitante.
 
 
 Puedes acceder al Proyecto desde el siguiente link.
