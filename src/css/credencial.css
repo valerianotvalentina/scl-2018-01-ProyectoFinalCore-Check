@@ -67,9 +67,9 @@ footer {
 
 .boton-left {
     height: 100%;
-    color: #ffffff;
-    background-color: #ededed;
-    border: 0px solid #8EC5FC;
+    color: #f8f9fa;
+    background-color: #f8f9fa;
+    border: 0px solid #f8f9fa;
     border-radius: 5px;
 }
 
@@ -78,9 +78,9 @@ footer {
 .boton-left:active,
 .boton-left.active,
 .open .dropdown-toggle.boton-left {
-    color: #ffffff;
-    background-color: #ededed;
-    border: 0px solid #E0C3FC;
+    color: #f8f9fa;
+    background-color: #f8f9fa;
+    border: 0px solid #f8f9fa;
     border-radius: 5px;
 }
 
@@ -105,14 +105,14 @@ fieldset[disabled] .boton-left:active,
 .boton-left.disabled.active,
 .boton-left[disabled].active,
 fieldset[disabled] .boton-left.active {
-    background-color: #ededed;
-    border: 0px solid #8EC5FC;
+    background-color: #f8f9fa;
+    border: 0px solid #f8f9fa;
     border-radius: 5px;
 }
 
 .boton-left .badge {
-    color: #8EC5FC;
-    background-color: #ffffff;
+    color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 #imgUser {
