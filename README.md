@@ -8,7 +8,7 @@ El registro de visitantes en las empresas Latinoamericanas es un proceso en gene
 
 
 
-Puedes acceder al Proyecto desde el siguiente link [aquí.]
+Puedes acceder al Proyecto desde el siguiente link.
 (https://mloretto.github.io/scl-2018-01-ProyectoFinalCore-Check/)
 
 
@@ -29,7 +29,7 @@ Los integrantes del Equipo son:
 
 Gracias a una entrevista podemos conocer diferentes puntos de vista de otros usuarios y nos ayuda a saber más sobre algunos asuntos que no están directamente en nuestras manos, nos permiten tomar decisiones vitales para el desarrollo del proyecto.
 
-Puedes acceder a nuestras entrevistas [aquí.]
+Puedes acceder a nuestras entrevistas en el siguiente link.
 (https://docs.google.com/document/d/18EkdIh1XidEnjCW9tUCOa52JRaREPmKkTVtT-1K4O_w/edit?usp=sharing)
 
 
@@ -73,12 +73,12 @@ Puedes acceder al Benchmarks [aquí.] (https://docs.google.com/document/d/1Vkenv
 
 ## Prototipo de Alta Fidelidad
 
-El prototipo de Alta Fidelidad fue realizado en Figma, puedes acceder al prototipo [aquí.]
+El prototipo de Alta Fidelidad fue realizado en Figma, puedes acceder al prototipo en el siguiente link.
 (https://www.figma.com/file/NpJHXb1JJ0is6XHz6vTERYij/Check-Registro-de-visitas?node-id=0%3A1)
 
 ## Organización
 
-La Organización del Equipo puedes revisarla [aquí.].
+La Organización del Equipo puedes revisarla en el siguiente link.
 (https://trello.com/b/GefglG1c/registro-usuario)
 
 
